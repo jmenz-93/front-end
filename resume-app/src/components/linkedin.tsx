@@ -12,16 +12,21 @@ const LinkedInImage: React.FC<LinkedInProps> = ({ imageUrl, linkUrl, altText, to
 
   return (
     <div >
+      <button
+      onClick={handleClick}
+      className="transition-transform hover:scale-110 items-center w-14"
+      style={{ cursor: 'pointer', padding: 0, border: 'none', background: 'none' }}
+      title={toolTip}
+      >
       <img
         src={imageUrl}
         alt={altText}
-        onClick={handleClick}
-        width={58}
-        // height={120}
-        className="transition-transform hover:scale-110 items-center"
-        style={{ cursor: 'pointer' }}
-        title={toolTip}
+        loading="lazy"
+        style={{ display: 'block'}}
+
+
       />
+      </button>
     </div>
   );
 };

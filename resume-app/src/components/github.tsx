@@ -11,16 +11,21 @@ const GitImage: React.FC<GitProps> = ({ imageUrl, linkUrl, altText, toolTip }) =
   };
 
   return (
-    <div >
-      <img
-        src={imageUrl}
-        alt={altText}
+    <div>
+      <button
         onClick={handleClick}
         className="transition-transform hover:scale-120 w-12"
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: 'pointer', padding: 0, border: 'none', background: 'none' }}
         title={toolTip}
-        loading="lazy"
-      />
+        aria-label={toolTip}
+      >
+        <img
+          src={imageUrl}
+          alt={altText}
+          loading="lazy"
+          style={{ display: 'block' }}
+        />
+      </button>
     </div>
   );
 };
