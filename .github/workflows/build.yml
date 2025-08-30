@@ -13,6 +13,22 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: resume-app/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./resume-app
+
+      - name: Run tests and generate coverage
+        run: npm test -- --coverage
+        working-directory: ./resume-app
+
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
