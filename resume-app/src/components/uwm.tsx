@@ -1,3 +1,5 @@
+import { navigateTo } from '../lib/navigation';
+
 interface UWMProps {
   imageUrl: string;
   linkUrl: string;
@@ -7,7 +9,7 @@ interface UWMProps {
 
 const UWMImage: React.FC<UWMProps> = ({ imageUrl, linkUrl, altText, size = 'w-24' }) => {
   const handleClick = () => {
-    window.location.href = linkUrl;
+    navigateTo(linkUrl);
   };
 
   return (
