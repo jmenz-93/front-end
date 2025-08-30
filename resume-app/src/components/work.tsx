@@ -2,25 +2,27 @@ interface WorkProps {
   imageUrl: string;
   linkUrl: string;
   altText: string;
-  toolTip: string;
+  size?: string;
 }
 
-const WorkImage: React.FC<WorkProps> = ({ imageUrl, linkUrl, altText, toolTip }) => {
+const WorkImage: React.FC<WorkProps> = ({ imageUrl, linkUrl, altText, size = 'w-20' }) => {
   const handleClick = () => {
     window.location.href = linkUrl;
   };
 
   return (
     <div >
+      <button
+        onClick={handleClick}
+        className={`transition-transform hover:scale-110 ${size}`}
+      >
       <img
         src={imageUrl}
         alt={altText}
-        onClick={handleClick}
-        width={200}
-        className="transition-transform hover:scale-110"
+        loading="lazy"
         style={{ cursor: 'pointer' }}
-        title={toolTip}
       />
+    </button>
     </div>
   );
 };
