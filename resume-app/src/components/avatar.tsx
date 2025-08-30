@@ -2,7 +2,7 @@ const Avatar = () => {
   return (
     <div className="flex justify-center items-center">
       <img
-        className="inline-block size-35 rounded-full ring-2 ring-white"
+        className="inline-block size-35 rounded-full shadow-2xl"
         src="/Image.JPG"
         alt="Avatar"
         width={180}

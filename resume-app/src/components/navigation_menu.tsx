@@ -14,8 +14,8 @@ const Navbar = () => {
         </div>
         <div className="transform translate-y-2 flex items-center gap-4 shadow-xl rounded-full px-6 py-2 bg-white dark:bg-neutral-800 mt-16">
           <Link to="/career" className="text-gray-700 dark:text-gray-200 font-medium transition-transform hover:scale-110">Career</Link>
-          <Link to="/personal_projects" className="text-gray-700 dark:text-gray-200 font-medium transition-transform hover:scale-110">Interests</Link>
-          <Link to="/personal_projects" className="text-gray-700 dark:text-gray-200 font-medium transition-transform hover:scale-110">Projects</Link>
+          <Link to="/hobbies" className="text-gray-700 dark:text-gray-200 font-medium transition-transform hover:scale-110">Hobbies</Link>
+          <Link to="/projects" className="text-gray-700 dark:text-gray-200 font-medium transition-transform hover:scale-110">Projects</Link>
         </div>
         <div className="flex items-center gap-3 mt-4">
 
@@ -23,13 +23,13 @@ const Navbar = () => {
             imageUrl="/github-mark.png"
             linkUrl="https://github.com/jmenz-93"
             altText="Github"
-            toolTip="Click to view Jon's Git."
+            toolTip="Click to view my Git"
           />
           <LinkedInImage
             imageUrl="/linkedin.png"
             linkUrl="https://www.linkedin.com/in/jon-menzel/"
             altText="LinkedIn"
-            toolTip="Click to view Jon's LinkedIn."
+            toolTip="Connect with me on LinkedIn"
           />
         </div>
       </div>
