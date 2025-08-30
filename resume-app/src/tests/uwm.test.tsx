@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import * as UWM from './uwm';
+import * as UWM from '../components/uwm';
 import * as Nav from '../lib/navigation';
 
 describe('UWMImage', () => {
