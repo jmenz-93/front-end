@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navigation_menu';
-import Career from './pages/career';
+import Career from './pages/career_and_education';
 import Projects from './pages/projects';
 import { ErrorPage } from './pages/error_page';
 
@@ -19,7 +19,7 @@ function App() {
                <Navbar/> 
                <Routes>
                  <Route path="/" element={<Career />} />
-                 <Route path="/career" element={<Career />} />
+                 <Route path="/career_and_education" element={<Career />} />
                  <Route path="/projects" element={<Projects />} />
                  <Route path="*" element={<ErrorPage />} />
                </Routes>

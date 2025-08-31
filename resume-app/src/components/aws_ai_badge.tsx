@@ -1,19 +1,17 @@
-interface LinkedInProps {
+interface AWSAIProps {
   imageUrl: string;
   linkUrl: string;
   altText: string;
-  toolTip: string;
 }
 
-const LinkedInImage: React.FC<LinkedInProps> = ({ imageUrl, linkUrl, altText, toolTip }) => {
+const AWSAIImage: React.FC<AWSAIProps> = ({ imageUrl, linkUrl, altText }) => {
   return (
     <div>
       <a
         href={linkUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="transition-transform hover:scale-110 items-center w-14 inline-block"
-        title={toolTip}
+        className="transition-transform hover:scale-120 w-28 inline-block"
       >
         <img
           src={imageUrl}
@@ -26,4 +24,4 @@ const LinkedInImage: React.FC<LinkedInProps> = ({ imageUrl, linkUrl, altText, to
   );
 };
 
-export default LinkedInImage;
+export default AWSAIImage;
