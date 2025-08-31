@@ -6,16 +6,13 @@ interface GitProps {
 }
 
 const GitImage: React.FC<GitProps> = ({ imageUrl, linkUrl, altText, toolTip }) => {
-  const handleClick = () => {
-    window.location.href = linkUrl;
-  };
-
   return (
     <div>
-      <button
-        onClick={handleClick}
-        className="transition-transform hover:scale-120 w-12"
-        style={{ cursor: 'pointer', padding: 0, border: 'none', background: 'none' }}
+      <a
+        href={linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform hover:scale-120 w-12 inline-block"
         title={toolTip}
         aria-label={toolTip}
       >
@@ -25,7 +22,7 @@ const GitImage: React.FC<GitProps> = ({ imageUrl, linkUrl, altText, toolTip }) =
           loading="lazy"
           style={{ display: 'block' }}
         />
-      </button>
+      </a>
     </div>
   );
 };

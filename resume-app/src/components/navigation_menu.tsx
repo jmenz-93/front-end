@@ -14,9 +14,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center gap-2 shadow-lg rounded-full px-4 py-2 bg-white/70 dark:bg-neutral-800/70 backdrop-blur-sm border border-slate-200/80 dark:border-neutral-700/80">
-          <Link to="/career" className="px-4 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Career</Link>
-          <Link to="/hobbies" className="px-4 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Hobbies</Link>
-          <Link to="/projects" className="px-4 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Projects</Link>
+          <Link to="/career_and_education" className="px-4 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Career & Education</Link>
+          <Link to="/projects" className="px-4 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Hobbies & Projects</Link>
         </div>
         <div className="flex-1 flex items-center justify-end gap-4">
           <GitImage
@@ -35,9 +34,8 @@ const Navbar = () => {
       </nav>
   
       <div className="mt-6 flex md:hidden items-center justify-center gap-2 shadow-lg rounded-full px-3 py-2 bg-white/70 dark:bg-neutral-800/70 backdrop-blur-sm border border-slate-200/80 dark:border-neutral-700/80">
-        <Link to="/career" className="px-3 py-1 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Career</Link>
-        <Link to="/hobbies" className="px-3 py-1 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Hobbies</Link>
-        <Link to="/projects" className="px-3 py-1 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Projects</Link>
+        <Link to="/career_and_education" className="px-3 py-1 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Career & Education</Link>
+        <Link to="/projects" className="px-3 py-1 text-sm font-medium text-gray-700 dark:text-gray-200 rounded-full transition-colors hover:bg-gray-200/50 dark:hover:bg-neutral-700/50">Hobbies & Projects</Link>
       </div>
     </header>
   );

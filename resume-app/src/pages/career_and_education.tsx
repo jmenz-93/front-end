@@ -1,7 +1,8 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react';
 import MUImage from '../components/mu';
 import UWMImage from '../components/uwm';
+import AWSAIImage from '../components/aws_ai_badge';
 import { BriefcaseIcon, AcademicCapIcon, CodeBracketIcon, SparklesIcon, XIcon } from '../components/icons';
 
 
@@ -30,16 +31,13 @@ const educationDetails = {
 };
 
 const skillDetails: { [key: string]: { title: string; description: string } } = {
-  'SQL': { title: 'SQL', description: 'Fill in details about how you have used SQL...' },
-  'Python': { title: 'Python', description: 'Fill in details about how you have used Python...' },
-  'dbt': { title: 'dbt', description: 'Fill in details about how you have used dbt...' },
-  'GitLab': { title: 'GitLab', description: 'Fill in details about how you have used GitLab...' },
-  'GitHub': { title: 'GitHub', description: 'Fill in details about how you have used GitHub...' },
-  'CI/CD': { title: 'CI/CD', description: 'Fill in details about how you have used CI/CD...' },
-  'AWS': { title: 'AWS', description: 'Fill in details about how you have used AWS...' },
-  'Tailwind CSS': { title: 'Tailwind CSS', description: 'Fill in details about how you have used Tailwind CSS...' },
-  'REST': { title: 'REST', description: 'Fill in details about how you have used REST...' },
-  'GraphQL': { title: 'GraphQL', description: 'Fill in details about how you have used GraphQL...' },
+  'SQL': { title: 'SQL', description: 'SQL...' },
+  'Python': { title: 'Python', description: 'Python...' },
+  'dbt': { title: 'dbt', description: 'dbt...' },
+  'GitLab': { title: 'GitLab', description: 'GitLab...' },
+  'GitHub': { title: 'GitHub', description: 'GitHub...' },
+  'CI/CD': { title: 'CI/CD', description: 'CI/CD...' },
+  'AWS': { title: 'AWS', description: 'AWS...' },
 };
 
 
@@ -57,8 +55,7 @@ export function Career() {
           <section className="mb-16">
           <article className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
             <p className="text-slate-600 leading-relaxed text-center text-lg">
-              Full‑stack engineer focused on building performant, accessible web apps. Passionate about clean design,
-              type‑safe tooling, and thoughtful DX. I enjoy collaborating across functions and delivering measurable impact.
+                Add Details
             </p>
           </article>
         </section>
@@ -98,11 +95,11 @@ export function Career() {
               <span className="absolute -left-[1.8rem] top-1 h-4 w-4 rounded-full bg-blue-500 ring-8 ring-white" />
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-semibold text-slate-800 mb-1">Software Engineer III, Northwestern Mutual</h3>
-                <p className="text-sm text-slate-500 mb-4">2022 - Present</p>
+                <p className="text-sm text-slate-500 mb-4">2024 - Present</p>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-slate-600 leading-6">
-                  <li>Led feature delivery that improved user conversion by 12% through A/B testing and performance optimizations.</li>
-                  <li>Reduced CI/CD build times by 30% by restructuring pipeline jobs and optimizing dependency caching.</li>
-                  <li>Mentored two junior engineers, establishing team-wide testing standards with Jest and React Testing Library.</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
                 </ul>
               </div>
             </div>
@@ -110,11 +107,23 @@ export function Career() {
             <div className="relative mb-10 ml-12">
               <span className="absolute -left-[1.8rem] top-1 h-4 w-4 rounded-full bg-slate-300 ring-8 ring-white" />
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <h3 className="text-xl font-semibold text-slate-800 mb-1">Junior Developer, Startup Inc.</h3>
+                <h3 className="text-xl font-semibold text-slate-800 mb-1">Software Engineer II, Northwestern Mutual</h3>
                 <p className="text-sm text-slate-500 mb-4">2020 - 2022</p>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-slate-600 leading-6">
-                  <li>Shipped responsive UI improvements that contributed to a 15% reduction in bounce rate on mobile devices.</li>
-                  <li>Developed and maintained a reusable component library in TypeScript, accelerating feature development.</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <div className="relative mb-10 ml-12">
+              <span className="absolute -left-[1.8rem] top-1 h-4 w-4 rounded-full  bg-slate-300 ring-8 ring-white" />
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-800 mb-1">Software Engineer I, Northwestern Mutual</h3>
+                <p className="text-sm text-slate-500 mb-4">2024 - Present</p>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-slate-600 leading-6">
+                  <li></li>
+                  <li></li>
+                  <li></li>
                 </ul>
               </div>
             </div>
@@ -140,7 +149,7 @@ export function Career() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-slate-800">University of Wisconsin-Milwaukee</h3>
-                    <p className="text-sm text-slate-500">Bachelor's in Computer Science</p>
+                    <p className="text-sm text-slate-500">Bachelor's in Information Science & Technology</p>
                   </div>
                 </div>
               </article>
@@ -169,12 +178,9 @@ export function Career() {
                 </div>
                 <h2 className="ml-4 text-sm font-bold uppercase tracking-widest text-slate-600">Certifications</h2>
             </div>
-            <article className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                <ul className="space-y-3 text-center text-sm text-slate-600">
-                <li>AWS Certified Cloud Practitioner <span className="text-slate-500 font-medium">(2024)</span></li>
-                <li>Professional Scrum Master (PSM I) <span className="text-slate-500 font-medium">(2023)</span></li>
-                </ul>
-            </article>
+          <div className="flex justify-left">
+              <AWSAIImage imageUrl="/aws-ai-pract.png" linkUrl="https://www.credly.com/badges/79ea3f7e-5b24-4d93-beee-982818b32699/public_url" altText="AWS" />
+          </div>
         </section>
         </div>
       </div>
@@ -215,9 +221,6 @@ export function Career() {
                   {educationModalData && (
                     <>
                       <div className="flex items-start gap-4">
-                        {/* <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100">
-                          <AcademicCapIcon className="h-6 w-6 text-indigo-600" />
-                        </div> */}
                         <div>
                           <DialogTitle as="h3" className="text-xl font-bold text-slate-900">
                             {educationModalData.title}
