@@ -17,7 +17,7 @@ const AWSAIImage: React.FC<AWSAIProps> = ({ imageUrl, linkUrl, altText }) => {
           src={imageUrl}
           alt={altText}
           loading="lazy"
-          className="transition-transform hover:scale-120 w-24 inline-block"
+          className="transition-transform hover:scale-110 w-24 inline-block"
           style={{ display: 'block' }}
         />
       </a>
