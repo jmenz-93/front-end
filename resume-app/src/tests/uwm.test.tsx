@@ -9,10 +9,10 @@ describe('UWMImage', () => {
 
   it('navigates to linkUrl on click', () => {
     jest.spyOn(Nav, 'navigateTo').mockImplementation(() => {});
-  const Component = UWM.default;
-  render(<Component imageUrl="/uwm.png" linkUrl="https://uwm.edu/" altText="UWM" />);
+    const Component = UWM.default;
+    render(<Component imageUrl="/uwm.png" linkUrl="https://uwm.edu/" altText="UWM" />);
     const button = screen.getByRole('link');
-    fireEvent.click(button);
+    fireEvent.click(button, { button: 0 });
     expect(Nav.navigateTo).toHaveBeenCalledWith('https://uwm.edu/');
   });
 
