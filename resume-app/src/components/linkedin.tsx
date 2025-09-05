@@ -10,7 +10,6 @@ const LinkedInImage: React.FC<LinkedInProps> = ({ imageUrl, linkUrl, altText, to
     <div>
       <a
         href={linkUrl}
-        target="_blank"
         rel="noopener noreferrer"
         className="transition-transform hover:scale-110 items-center w-14 inline-block"
         title={toolTip}

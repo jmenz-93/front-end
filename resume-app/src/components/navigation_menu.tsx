@@ -7,9 +7,8 @@ const Navbar = () => {
   return (
     <header className="w-full py-5 px-4 sm:px-6 lg:px-8">
       <nav className="relative flex items-center justify-between max-w-7xl mx-auto">
-        {/* Left: Avatar */}
         <div className="flex-1 flex items-center justify-start">
-          <Link to="/career" className="transition-transform hover:scale-105">
+          <Link to="/career_and_education" className="transition-transform hover:scale-105">
             <Avatar />
           </Link>
         </div>
