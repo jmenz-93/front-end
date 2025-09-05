@@ -1,19 +1,16 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import * as UWM from '../components/uwm';
-import * as Nav from '../lib/navigation';
 
 describe('UWMImage', () => {
   afterEach(() => {
     jest.restoreAllMocks();
   });
 
-  it('navigates to linkUrl on click', () => {
-    jest.spyOn(Nav, 'navigateTo').mockImplementation(() => {});
-  const Component = UWM.default;
-  render(<Component imageUrl="/uwm.png" linkUrl="https://uwm.edu/" altText="UWM" />);
-    const button = screen.getByRole('button');
-    fireEvent.click(button);
-    expect(Nav.navigateTo).toHaveBeenCalledWith('https://uwm.edu/');
+  it('renders link with correct href', () => {
+    const Component = UWM.default;
+    render(<Component imageUrl="/uwm.png" linkUrl="https://uwm.edu/" altText="UWM" />);
+    const link = screen.getByRole('link');
+    expect(link).toHaveAttribute('href', 'https://uwm.edu/');
   });
 
   it('renders image with alt text', () => {

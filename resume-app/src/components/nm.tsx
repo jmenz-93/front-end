@@ -1,10 +1,11 @@
-interface UWMProps {
+interface NMProps {
   imageUrl: string;
   linkUrl: string;
   altText: string;
+
 }
 
-const UWMImage: React.FC<UWMProps> = ({ imageUrl, linkUrl, altText }) => {
+const NMLogo: React.FC<NMProps> = ({ imageUrl, linkUrl, altText}) => {
 
   return (
     <div>
@@ -16,12 +17,12 @@ const UWMImage: React.FC<UWMProps> = ({ imageUrl, linkUrl, altText }) => {
           src={imageUrl}
           alt={altText}
           loading="lazy"
-          className="w-18 h-auto transition-transform hover:scale-110 items-center"
+          className="w-12 h-auto hover:scale-110 items-center transition-transform"
           style={{ display: 'block'}}
         />
-      </a>
+    </a>
     </div>
   );
 };
 
-export default UWMImage;
+export default NMLogo;

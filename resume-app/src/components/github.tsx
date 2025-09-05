@@ -10,11 +10,9 @@ const GitImage: React.FC<GitProps> = ({ imageUrl, linkUrl, altText, toolTip }) =
     <div>
       <a
         href={linkUrl}
-        target="_blank"
         rel="noopener noreferrer"
         className="transition-transform hover:scale-120 w-12 inline-block"
         title={toolTip}
-        aria-label={toolTip}
       >
         <img
           src={imageUrl}
